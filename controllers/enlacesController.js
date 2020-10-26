@@ -66,7 +66,7 @@ exports.obtenerEnlace = async (req, res, next) => {
     }
 
     // Si existe
-    res.status(200).json({ archivo: enlace.nombre, password: false })
+    res.status(200).json({ archivo: enlace.url, password: false })
 
     next()
 }
